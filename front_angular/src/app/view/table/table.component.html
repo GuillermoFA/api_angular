@@ -1,0 +1,21 @@
+<section class="container p-2 bg-black ">
+  <div *ngIf="user" class="row">
+    <div class="col-md-12 fst-italic bg-info bg-opacity-50 border border-warning border-3 rounded-end-5 rounded-start-5">
+      <h3 class="text-center text-white">Avance en Frameworks</h3>
+      <table class="table">
+        <thead>
+          <tr class="border-black table-active text-center">
+            <th scope="col">Framework</th>
+            <th scope="col" class="fw-bold">Avance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let framework of user.user_framework" class="text-center">
+            <td>{{ framework.framework }}</td>
+            <td>{{ framework.avance }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

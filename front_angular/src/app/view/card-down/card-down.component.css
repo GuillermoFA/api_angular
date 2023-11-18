@@ -1,0 +1,5 @@
+.imagen{
+  width: 100px; /* Tamaño deseado para las imágenes */
+  height: 100px;
+  object-fit: cover;/* Opcional: para recortar las imágenes al tamaño especificado */
+}

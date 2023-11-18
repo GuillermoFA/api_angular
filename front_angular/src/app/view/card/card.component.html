@@ -1,0 +1,17 @@
+<section class="container p-2 bg-black ">
+  <div class="row ">
+      <div class="col-md-6 text-bg-primary mb-5 fst-italic bg-info  bg-opacity-50 border border-warning border-3 rounded-end-5 rounded-start-5">
+          <h2 class="text-center mt-3">{{ user?.user_info_user?.[0]?.titulo}}</h2>
+          <p>{{ user?.user_info_user?.[0]?.contenido}}</p>
+      </div>
+      <div class="col-md-6 text-bg-primary mb-5 fst-italic bg-info  bg-opacity-50 border border-warning border-3 rounded-end-5 rounded-start-5">
+          <h3 class="text-center">Datos Personales</h3>
+          <ul>
+              <li>Edad: {{ user?.user_data_personal?.[0]?.edad }}</li>
+              <li>País: {{ user?.user_data_personal?.[0]?.pais }}</li>
+              <li>Ciudad: {{ user?.user_data_personal?.[0]?.ciudad }}</li>
+              <li>Correo Electrónico: <a class="text-decoration-underline text-white" >{{ user?.user_data_personal?.[0]?.email }}</a></li>
+          </ul>
+      </div>
+  </div>
+</section>
